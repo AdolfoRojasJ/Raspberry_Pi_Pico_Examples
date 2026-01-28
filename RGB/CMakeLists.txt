@@ -1,0 +1,5 @@
+add_executable(RGB RGB.c)
+	target_link_libraries(RGB pico_stdlib)
+	pico_enable_stdio_uart(RGB 0)
+	pico_enable_stdio_usb(RGB 0)
+	pico_add_extra_outputs(RGB)

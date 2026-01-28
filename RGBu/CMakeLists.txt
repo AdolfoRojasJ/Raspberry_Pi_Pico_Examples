@@ -1,0 +1,5 @@
+add_executable(RGBu RGBu.c)
+target_link_libraries(RGBu pico_stdlib)
+pico_enable_stdio_uart(RGBu 0)
+pico_enable_stdio_usb(RGBu 0)
+pico_add_extra_outputs(RGBu)

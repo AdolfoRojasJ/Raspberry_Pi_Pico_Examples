@@ -1,0 +1,5 @@
+add_executable(LCD_CONF LCD_CONF.c)
+	target_link_libraries(LCD_CONF pico_stdlib hardware_adc hardware_i2c)
+	pico_enable_stdio_uart(LCD_CONF 0)
+	pico_enable_stdio_usb(LCD_CONF 0)
+	pico_add_extra_outputs(LCD_CONF)
