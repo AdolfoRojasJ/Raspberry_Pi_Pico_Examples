@@ -1,0 +1,5 @@
+add_executable(Blink2 Blink2.c)
+	target_link_libraries(Blink2 pico_stdlib)
+	pico_enable_stdio_uart(Blink2 0)
+	pico_enable_stdio_usb(Blink2 0)
+	pico_add_extra_outputs(Blink2)
